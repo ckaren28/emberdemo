@@ -1,0 +1,14 @@
+<nav>
+  <div class="nav-wrapper">
+    <div class="container">
+      <a href='/' class='brand-logo'>ember</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{yield}}
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        {{yield}}
+      </ul>
+    </div>
+  </div>
+</nav>

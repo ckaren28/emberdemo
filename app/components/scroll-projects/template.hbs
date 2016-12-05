@@ -1,0 +1,16 @@
+<div class="col m9 l10">
+  {{#each projects as |project|}}
+    <div id="{{project.id}}" class="section scrollspy">
+      <h2 class="header">{{project.name}}</h2>
+      <p>{{project.description}}</p>
+      <img class="responsive-img" src="{{project.image_url}}">
+    </div>
+  {{/each}}
+</div>
+<div class="col hide-on-small-only m3 l2">
+  <ul class="section pinned table-of-contents">
+    {{#each projects as |project|}}
+      <li><a href="#{{project.id}}">{{project.name}}</a></li>
+    {{/each}}
+  </ul>
+</div>
